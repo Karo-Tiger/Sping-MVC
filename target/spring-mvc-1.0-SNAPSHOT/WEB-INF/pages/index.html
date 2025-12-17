@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title></title>
 </head>
 <body>
 <div>
-    <th:block th:each="car : ${cars}">
-        <h1 th:text="'Mark: ' + ${car.model} + ', year_of_manufacture: ' + ${car.year_of_manufacture} + ', color: ' + ${car.car_color}"></h1>
+    <th:block th:each="msg : ${messages}">
+        <h1 th:text="${msg}"></h1>
     </th:block>
 </div>
 </body>
