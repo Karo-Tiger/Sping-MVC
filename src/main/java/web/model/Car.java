@@ -2,13 +2,13 @@ package web.model;
 
 public class Car {
     private String model;
-    private int year_of_manufacture;
-    private String car_color;
+    private int yearOfManufacture;
+    private String carColor;
 
-    public Car(String model, int year_of_manufacture, String car_color) {
+    public Car(String model, int yearOfManufacture, String carColor) {
         this.model = model;
-        this.year_of_manufacture = year_of_manufacture;
-        this.car_color = car_color;
+        this.yearOfManufacture = yearOfManufacture;
+        this.carColor = carColor;
     }
     public String getModel() {
         return model;
@@ -16,24 +16,29 @@ public class Car {
     public void setModel(String model) {
         this.model = model;
     }
-    public int getYear_of_manufacture() {
-        return year_of_manufacture;
+
+    public int getYearOfManufacture() {
+        return yearOfManufacture;
     }
-    public void setYear_of_manufacture(int year_of_manufacture) {
-        this.year_of_manufacture = year_of_manufacture;
+
+    public void setYearOfManufacture(int yearOfManufacture) {
+        this.yearOfManufacture = yearOfManufacture;
     }
-    public String getCar_color() {
-        return car_color;
+
+    public String getCarColor() {
+        return carColor;
     }
-    public void setCar_color(String car_color) {
-        this.car_color = car_color;
+
+    public void setCarColor(String carColor) {
+        this.carColor = carColor;
     }
 
     @Override
     public String toString() {
-        return "Car" +
+        return "Car{" +
                 "model='" + model + '\'' +
-                ", year_of_manufacture " + year_of_manufacture +
-                ", car_color='" + car_color + '\'';
+                ", yearOfManufacture=" + yearOfManufacture +
+                ", carColor='" + carColor + '\'' +
+                '}';
     }
 }
